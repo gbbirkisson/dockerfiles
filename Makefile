@@ -34,7 +34,3 @@ build-tag:
 .PHONY: httpie
 httpie:
 	IMAGE=httpie PLATFORM="linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v7,linux/arm/v6" $(MAKE) build-tag
-
-.PHONY: xcomfortd
-xcomfortd:
-	IMAGE=xcomfortd PLATFORM="linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v7,linux/arm/v6" $(MAKE) build-tag
